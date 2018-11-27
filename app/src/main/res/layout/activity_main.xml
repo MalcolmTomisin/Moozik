@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmnls:android="http://schemas.android.com/apk/res/android"
+    xmlns:xmnls="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmnls:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_background_rectangle"
+    android:weightSum="10"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/textGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/opensans_extrabold"
+            android:text="@string/home_text"
+            android:textColor="@color/home_text_color"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/ic_hori_line" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="106dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/opensansbold"
+            android:text="@string/recently_added"
+            android:textAlignment="center"
+            android:textColor="@color/title_text_color"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:padding="14dp"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            xmnls:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recyclerview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            />
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_columnWeight="1"-->
+        <!--android:layout_rowWeight="1"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--app:cardElevation="8dp"-->
+        <!--app:cardCornerRadius="8dp">-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal|center_vertical"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_margin="16dp"-->
+        <!--&gt;-->
+        <!--<ImageView-->
+        <!--android:src="@drawable/ic_music_art_layers"-->
+        <!--android:text="@string/title_here"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="@color/title_text_color"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_columnWeight="1"-->
+        <!--android:layout_rowWeight="1"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--app:cardElevation="8dp"-->
+        <!--app:cardCornerRadius="8dp">-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal|center_vertical"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_margin="16dp"-->
+        <!--&gt;-->
+        <!--<ImageView-->
+        <!--android:src="@drawable/ic_music_art_layers"-->
+        <!--android:text="@string/title_here"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="@color/title_text_color"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_columnWeight="1"-->
+        <!--android:layout_rowWeight="1"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--app:cardElevation="8dp"-->
+        <!--app:cardCornerRadius="8dp">-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal|center_vertical"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_margin="16dp"-->
+        <!--&gt;-->
+        <!--<ImageView-->
+        <!--android:src="@drawable/ic_music_art_layers"-->
+        <!--android:text="@string/title_here"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="@color/title_text_color"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_columnWeight="1"-->
+        <!--android:layout_rowWeight="1"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--app:cardElevation="8dp"-->
+        <!--app:cardCornerRadius="8dp">-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal|center_vertical"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_margin="16dp"-->
+        <!--&gt;-->
+        <!--<ImageView-->
+        <!--android:src="@drawable/ic_music_art_layers"-->
+        <!--android:text="@string/title_here"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="@color/title_text_color"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_columnWeight="1"-->
+        <!--android:layout_rowWeight="1"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--app:cardElevation="8dp"-->
+        <!--app:cardCornerRadius="8dp">-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal|center_vertical"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_margin="16dp"-->
+        <!--&gt;-->
+        <!--<ImageView-->
+        <!--android:src="@drawable/ic_music_art_layers"-->
+        <!--android:text="@string/title_here"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="@color/title_text_color"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_columnWeight="1"-->
+        <!--android:layout_rowWeight="1"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--app:cardElevation="8dp"-->
+        <!--app:cardCornerRadius="8dp">-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal|center_vertical"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_margin="16dp"-->
+        <!--&gt;-->
+        <!--<ImageView-->
+        <!--android:src="@drawable/ic_music_art_layers"-->
+        <!--android:text="@string/title_here"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="@color/title_text_color"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--</android.support.v7.widget.CardView>-->
+
+
+
+
+
+
+
+
+    </GridLayout>
+</LinearLayout>
